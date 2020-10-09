@@ -26,9 +26,16 @@ public abstract class AbstractBlockMixin {
                     adjacent++;
                 }
             }
-            if(adjacent > 2) {
+            // crude patch to make it possible to break blocks more easily as a feline
+            // blocks with high adjacency break pretty slowly, and you get a small time penalty for ones without.
+            if(adjacent > 3) {
+                if (PowerTypes.WEAK_ARMS.isActive(player) && !player.hasStatusEffect(StatusEffects.STRENGTH)) {
+                    info.setReturnValue(0.025repo
+                            F);
+                }
+            } else {
                 if(PowerTypes.WEAK_ARMS.isActive(player) && !player.hasStatusEffect(StatusEffects.STRENGTH)) {
-                    info.setReturnValue(0F);
+                    info.setReturnValue(0.035F);
                 }
             }
             if(PowerTypes.STRONG_ARMS.isActive(player) && !player.inventory.getMainHandStack().isEffectiveOn(state)) {
