@@ -108,7 +108,7 @@
   "power.origins.cat_vision.description": "You can slightly see in the dark when not in water.",
 
   "power.origins.weak_arms.name": "Weak Arms",
-  "power.origins.weak_arms.description": "When not under the effect of a strength potion, you can only mine natural stone if there are at most 2 other natural stone blocks adjacent to it.",
+  "power.origins.weak_arms.description": "When not under the effect of a strength potion, you mine natural stone more slowly -- especially if there are more than 3 natural stone adjacent.",
 
   "power.origins.scare_creepers.name": "Catlike Appearance",
   "power.origins.scare_creepers.description": "Creepers are scared of you and will only explode if you attack them first.",
