@@ -30,8 +30,7 @@ public abstract class AbstractBlockMixin {
             // blocks with high adjacency break pretty slowly, and you get a small time penalty for ones without.
             if(adjacent > 3) {
                 if (PowerTypes.WEAK_ARMS.isActive(player) && !player.hasStatusEffect(StatusEffects.STRENGTH)) {
-                    info.setReturnValue(0.025repo
-                            F);
+                    info.setReturnValue(0.025F);
                 }
             } else {
                 if(PowerTypes.WEAK_ARMS.isActive(player) && !player.hasStatusEffect(StatusEffects.STRENGTH)) {
